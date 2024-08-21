@@ -80,8 +80,9 @@ fun RegisterScreen(
         // Register Button
         Button(
             onClick = {
-                viewModel.saveUserDetails(firstName.toString(), lastName.toString(),
-                    email.toString()
+                viewModel.saveUserDetails(
+                    firstName.value, lastName.value,
+                    email.value
                 )
                 navHostController.navigate("home_screen")
 
